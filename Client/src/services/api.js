@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:3000/api/products",
+  baseURL: "https://trial-2-inna.onrender.com/api/products",
 });
 
 export default API;

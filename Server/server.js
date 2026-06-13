@@ -8,7 +8,7 @@ const cors = require('cors')
 connectDb()
 
 app.use(express.json())
-app.use(cors())
+app.use(cors({origin:"https://trial-mu-one.vercel.app"}))
 app.use('/api/products',productRoutes)
 
 app.listen(process.env.PORT,()=>{
